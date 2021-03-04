@@ -10,8 +10,8 @@ body {
     color: rgba(0, 0, 0, 0.87);
 }
 #logo{
-  width: 200px;
-  height: 40px;
+  width: 150px;
+  height: 30px;
 }
 .caret {
     display: inline-block;
@@ -110,6 +110,11 @@ body {
 .dropdown-item:active{
   background-color: #2e446c;
 }
+.dropdown-item.hover,
+.dropdown-item:hover{
+  background-color: #252850;
+  color:white
+}
 .collapsible {
   background-color: #2e446c;
   color: white;
@@ -134,11 +139,11 @@ body {
 }
 
 .collapsible:hover {
-  background-color:#b51a89;
+  background-color:#252850;
   color: white;
 }
 .collapsible2:hover {
-  background-color:#b51a89;
+  background-color:#252850;
   color: white;
 }
 
@@ -147,7 +152,7 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #2e446c;
 }
 .ir-arriba {
   display: flex;
@@ -165,13 +170,16 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #2e446c;
 }
 .list-group-item{
-  background-color:#2e446c
+  background-color:#2e446c;
+  padding: 0px;
+  border: none;
 }
 .dropdown-item{
   white-space: unset;
+  color: white;
 }
 table,tr,td{
   border: 1px solid black;
@@ -213,19 +221,55 @@ table,tr,td{
   text-align: inherit;
   padding: 18px;
   width: 100%;
-  border-radius: initial;
 }
 .btn-secondary:hover{
-  background-color: #b51a89;
-  color:white
+  background-color: #252850;
+  color:white;
+  border-color:#252850 ;
 }
 .active{
   border: 1px solid black;
-  background-color: #b51a89;
+  background-color: #252850;
   color:white
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
   border: 1px solid black;
-  background-color:#b51a89;
+  background-color:#252850;
   color:white
+}
+#flecha {
+  position: relative;
+  width: 15px;
+}
+
+/* CSS solución */
+#flecha {
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+}
+#boton:hover #flecha {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.collapsible2.active #flecha {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.collapsible:hover #flecha {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.collapsible.active #flecha {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }

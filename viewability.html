@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Adsmovil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -27,20 +27,26 @@
     </div>
 </nav>
 <div>
-<div class="d-flex" id="wrapper">
+  <div class="d-flex" id="wrapper">
     <div class="nav bg-light border-right" id="sidebar-wrapper">
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
                 <a class="btn btn-secondary" href="index.html">Como crear un Usuario</a>
                 <a class="btn btn-secondary" href="CrearAd.html">Como crear un Advertaiser</a>
-                <button class="collapsible">Configuración de Campaña</button>
+                <button class="collapsible">
+                    <span>Configuración de Campaña</span>
+                    <img id="flecha" src="img/flecha2.png"></img>
+                </button>
                 <div class="content">
                     <a class="dropdown-item" href="CrearCamp.html">Creación de Campaña</a>
                     <a class="dropdown-item" href="CrearLin.html">Creación de Line Item</a>
                     <a class="dropdown-item" href="CrearCre.html">Creación de Creativo</a>
                 </div>
                 <a class="btn btn-secondary" href="campPmp.html">Configuración campaña PMP</a>
-                <button class="collapsible2">Segmentación</button>
+                <button id="boton" class="collapsible2">
+                    <span>Segmentación</span>
+                    <img id="flecha" src="img/flecha2.png"></img>
+                </button>
                 <div class="content2">
                     <a class="dropdown-item" href="segAds.html">Segmentación Ads.txt</a>
                     <a class="dropdown-item" href="segApp.html">Segmentación de App/Site</a>
@@ -49,7 +55,16 @@
                     <a class="dropdown-item" href="segDom.html">Segmentación Domain</a>
                     <a class="dropdown-item" href="segEnv.html">Segmentación Environment</a>
                     <a class="dropdown-item" href="segEx.html">Segmentación Exchange</a>
-                    <a class="dropdown-item" href="segFlex.html">Segmentación Flexible a travez de todas las opciones</a>
+                    <button id="boton" class="collapsible2">
+                        <span>Segmentación flexible en todos los campos </span>
+                        <img id="flecha" src="img/flecha2.png"></img>
+                    </button>
+                    <div class="content2">
+                        <a class="dropdown-item" href="segFlex.html">Como funciona</a>
+                        <a class="dropdown-item" href="segFlex.html#validacion">Validaciones</a>
+                        <a class="dropdown-item" href="segFlex.html#ejemplo">Ejemplos</a>
+                        <a class="dropdown-item" href="segFlex.html#preguntas">Preguntas Frecuentes</a>
+                    </div>
                     <a class="dropdown-item" href="segGeo.html">Segmentación Geografica</a>
                     <a class="dropdown-item" href="segIP.html">Segmentación dirección de IP</a>
                     <a class="dropdown-item" href="segLatyLon.html">Segmentación Latitud y Longitud</a>
@@ -61,12 +76,18 @@
                     <a class="dropdown-item" href="segVid.html">Segmentación Video</a>
                     <a class="dropdown-item" href="segCom.html">Cómo crear segmentos de exclusión o retargeting en la Web</a>
                     <a class="dropdown-item" href="segOri.html">Cómo orientar o excluir secuencialmente a los usuarios que han visto un anuncio en la web</a>
-                    <button class="collapsible2">Listas</button>
+                    <button class="collapsible2">
+                        <span>Listas</span>
+                        <img id="flecha" src="img/flecha2.png"></img>
+                    </button>
                     <div class="content2">
                     <a class="dropdown-item" href="configLogyLat.html">Configuración Log y Lat</a>
                     </div>
                 </div>
-                <button class="collapsible">Viewability</button>
+                <button class="collapsible">
+                    <span>Viewability</span>
+                    <img id="flecha" src="img/flecha2.png"></img>
+                </button>
                 <div class="content">
                     <a class="dropdown-item" href="viewability.html">Medicion de visibilidad posterior a la oferta: banner</a>
                     <a class="dropdown-item" href="video.html">Medicion de visibilidad posterior a la oferta: video</a>
@@ -75,39 +96,54 @@
                     <a class="dropdown-item" href="Grapeshot.html">Segmentación Grapeshot & Moat Pre-Bid</a>
                     <a class="dropdown-item" href="IAS.html">Segmentación IAS Pre-Bid</a>
                 </div>
-                <button class="collapsible2">Configuraciones de oferta</button>
+                <button id="boton" class="collapsible2">
+                    <span>Configuraciones de oferta</span>
+                    <img id="flecha" src="img/flecha2.png"></img>
+                </button>
                 <div class="content2">
                     <a class="dropdown-item" href="estrategia.html">Estrategia de oferta</a>
-                    <button class="collapsible2">Bid Modifier</button>
+                    <button id="boton"class="collapsible2">
+                        <span>Bid Modifier</span>
+                        <img id="flecha" src="img/flecha2.png"></img>
+                    </button>
                     <div class="content2">
                         <a class="dropdown-item" href="bidgeneral.html">Bid Modifier Descripción general</a>    
                         <a class="dropdown-item" href="modifiOfert.html">Como crear modificadores de oferta</a>
-                        <a class="dropdown-item" href="#">Tipos de modificadores de ofertas</a>
+                        <a class="dropdown-item" href="modifiOfert.html#tipos">Tipos de modificadores de ofertas</a>
                         <a class="dropdown-item" href="bidmodfaqs.html">Bid Modifier FAQs</a>
                     </div>
-                    <button class="collapsible2">Bid Shading</button>
+                    <button id="boton" class="collapsible2">
+                        <span>Bid Shading</span>
+                        <img id="flecha" src="img/flecha2.png"></img>
+                    </button>
                     <div class="content2">
-                        <a class="dropdown-item" href="bidshading.html">¿Que es Bid Shading?</a>
-                        <a class="dropdown-item" href="casosu.html">Casos de uso comun</a>
-                        <a class="dropdown-item" href="#">Como utilizar la funcion de bid Shading</a>
-                        <a class="dropdown-item" href="#">Impacto del bid shading de lado de la oferta</a>
-                        <a class="dropdown-item" href="#">Habilitacion del cliente</a>
-                        <a class="dropdown-item" href="#">Preguntas frecuentes</a>
+                        <a class="dropdown-item" href="casosu.html">¿Que es Bid Shading?</a>
+                        <a class="dropdown-item" href="casosu.html#casou">Casos de uso comun</a>
+                        <a class="dropdown-item" href="casosu.html#como">Como utilizar la funcion de bid Shading</a>
+                        <a class="dropdown-item" href="casosu.html#control">Control adicional para el bid shading</a>
+                        <a class="dropdown-item" href="casosu.html#impacto">Impacto del bid shading de lado de la oferta</a>
+                        <a class="dropdown-item" href="casosu.html#preguntas">Preguntas frecuentes</a>
                     </div>
                 </div>
-                <button class="collapsible">Experimentos</button>
+                <button class="collapsible">
+                    <span>Experimentos</span>
+                    <img id="flecha" src="img/flecha2.png"></img>
+                </button>
                 <div class="content">
                     <a class="dropdown-item" href="Experimentos.html">Antecedentes</a>
-                    <a class="dropdown-item" href="#">Casos de uso</a>
-                    <a class="dropdown-item" href="#">Como utilizar la funcion Experimentos</a>
-                    <a class="dropdown-item" href="#">Reportes</a>
-                    <a class="dropdown-item" href="#">Preguntas frecuentes</a>
+                    <a class="dropdown-item" href="Experimentos.html#cu">Casos de uso</a>
+                    <a class="dropdown-item" href="Experimentos.html#comoutilizar">Como utilizar la funcion Experimentos</a>
+                    <a class="dropdown-item" href="Experimentos.html#report">Reportes</a>
+                    <a class="dropdown-item" href="Experimentos.html#preguntas">Preguntas frecuentes</a>
                 </div>
                 <a class="btn btn-secondary" href="report.html" >Reportes</a>
-                <button class="collapsible">Alertas</button>
+                <button class="collapsible">
+                    <span>Alertas</span>
+                    <img id="flecha" src="img/flecha2.png"></img>
+                </button>
                 <div class="content">
                     <a class="dropdown-item" href="alertas.html">Tipos de alertas</a>
-                    <a class="dropdown-item" href="resumen.html">Resumen de alertas</a>
+                    <a class="dropdown-item" href="alertas.html#resumen">Resumen de alertas</a>
                 </div>
                 <a class="btn btn-secondary" href="divisas.html" >Divisas y moneda</a>
             </li>
@@ -115,7 +151,7 @@
     </div>
     <div id="page-content-wrapper">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html" style="color:black">Viewability</a></li>
+            <li class="breadcrumb-item">Viewability</li>
             <li class="breadcrumb-item">Medición de visibilidad posterior a la oferta: banner</li>
         </ol>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -125,9 +161,10 @@
         </nav>
     
           <div class="container-fluid">
-            <h2>Viewability</h3>
+            <span class="ir-arriba icon-arrow-up2"></span>
+            <h2 id="titulo">Viewability</h3>
                 <br>
-            <h4>Medición de visibilidad posterior a la oferta: banner</h2>
+            <h4 id="subtitulo">Medición de visibilidad posterior a la oferta: banner</h2>
             <p>
                 Adsmovil tiene una integración directa con IAS , MOAT y DoubleVerify para informes de viewability de la web de desktop, web móvil y anuncios de display para móviles en aplicaciones. Para configurar cualquiera de estos proveedores en una línea de pedido, navegue hasta el campo "Creative add-on" en la sección "Píxeles y scripts" de la pantalla "Editar creatividad" y seleccione "Etiqueta de banner IAS", "Banner MOAT Etiqueta "o" Etiqueta de banner de DoubleVerify ". 
             </p>
